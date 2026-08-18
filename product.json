@@ -1,0 +1,64 @@
+{
+  "name": "X (Twitter) Number Checker API",
+  "brand": "CheckNumber",
+  "slug": "twitter-number-checker-api",
+  "repository": "checkernumber/twitter-number-checker-api",
+  "description": "Asynchronous file-based X (Twitter) checks.",
+  "official_site": "https://checknumber.ai",
+  "landing_page": "https://checknumber.ai/products/x-twitter",
+  "canonical_docs": "https://docs.checknumber.ai/twitter-bulk-number-checker",
+  "dashboard": "https://platform.checknumber.ai",
+  "base_url": "https://api.checknumber.ai",
+  "mode": "async",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "endpoints": {
+    "create_task": {
+      "method": "POST",
+      "path": "/v1/tasks"
+    },
+    "get_task": {
+      "method": "POST",
+      "path": "/v1/gettasks"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/v1/balance"
+    }
+  },
+  "input": {
+    "file_format": "text file, one phone number, email address, or username according to service_type per line according to task type"
+  },
+  "products": [
+    {
+      "task_type": "twitter",
+      "name": "Number Checker",
+      "doc_slug": "twitter-bulk-number-checker",
+      "input_kind": "phone",
+      "min_numbers": 2000,
+      "max_numbers": 10000000,
+      "result_fields": [
+        "number",
+        "activated"
+      ]
+    },
+    {
+      "task_type": "twitter_email",
+      "name": "Email Checker",
+      "doc_slug": "twitter-email-checker",
+      "input_kind": "email",
+      "min_numbers": 1000,
+      "max_numbers": 10000000,
+      "result_fields": [
+        "email",
+        "activated"
+      ]
+    }
+  ],
+  "pricing_url": "https://checknumber.ai/pricing",
+  "maintainer": "CheckNumber",
+  "license": "MIT",
+  "last_reviewed": "2026-08-18"
+}
