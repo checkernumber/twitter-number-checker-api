@@ -55,9 +55,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Task'
         '400':
-          description: Invalid file
-          task type: null
-          or row count: null
+          description: Invalid file, task type, or row count
         '401':
           description: Missing or invalid API key
         '402':

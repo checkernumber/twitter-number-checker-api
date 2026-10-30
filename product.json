@@ -44,7 +44,8 @@
         "activated"
       ],
       "min_billable_numbers": 500,
-      "available": true
+      "available": true,
+      "product_id": 5
     },
     {
       "task_type": "twitter_email",
@@ -58,7 +59,8 @@
         "activated"
       ],
       "min_billable_numbers": 500,
-      "available": true
+      "available": true,
+      "product_id": 39
     }
   ],
   "pricing_url": "https://checknumber.ai/pricing",
